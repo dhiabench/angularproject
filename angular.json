@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../crowdfund/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "../crowdfund/node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
+              "../crowdfund/node_modules/@fortawesome/fontawesome-free/scss/solid.scss"
             ],
             "scripts": []
           },

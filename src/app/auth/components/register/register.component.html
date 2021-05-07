@@ -1,0 +1,123 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3 mt-4">
+        <h3>Nouveau utilisateur</h3>
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <div class="form-group">
+                <label for="registerNom">Nom</label>
+                <input type="text"  name="Nom" ngModel required #nom="ngModel"
+                       class="form-control"
+                       id="registerNom"
+                       placeholder="Entrer Nom">
+            </div>
+            <div class="form-group">
+              <label for="registerprenom">Prénom</label>
+              <input type="text"  name="Prénom" ngModel required #prénom="ngModel"
+                     class="form-control"
+                     id="registerprenom"
+                     placeholder="Entrer prenom">
+          </div>
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email"
+                name="Email" ngModel required #email="ngModel"
+                       class="form-control"
+                       id="registerEmail"
+                       placeholder="Enter email"><!---->
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Mot de passe</label>
+                <input type="password"
+                name="password" ngModel required #password="ngModel"
+                       class="form-control"
+                       id="registerPassword"
+                       placeholder="Mot de passe">
+            </div>
+            <div class="form-group">
+              <label for="reregisterPassword">Confirmer Mot de passe</label>
+              <input type="password"
+              name="repassword" ngModel required #repassword="ngModel"
+                     class="form-control"
+                     id="reregisterPassword"
+                     placeholder="Confirmer mot depasse">
+          </div>
+          <div class="form-group">
+            <label>Date de naissance</label>
+          <div class="form-row">   
+          <div class="form-col-md-6">   
+          <fieldset>
+             <label class="mois"> 
+             <select class="select-style" name="BirthMonth">
+             <option value="">Mois</option>
+             <option value="01">January</option>
+             <option value="02">February</option>
+             <option value="03" >March</option>
+             <option value="04">April</option>
+             <option value="05">May</option>
+             <option value="06">June</option>
+             <option value="07">July</option>
+             <option value="08">August</option>
+             <option value="09">September</option>
+             <option value="10">October</option>
+             <option value="11">November</option>
+             <option value="12" >December</option>
+           </select>    
+             </label>
+             </fieldset>
+            </div>
+            <div class="form-col-md-4">  
+              <label>Jour   <input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+           </div>
+           <div class="form-col-md-2">     
+           <label>Année   <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+           </div>
+          </div>
+          </div>
+  
+          <div class="form-group">
+            <label>Genre</label><br>
+         <select class="form-control form-control-sm" name="genre">
+          <option value="select">Je suis...</option>
+          <option value="m">Male</option>
+          <option value="f">Female</option>
+          </select><br>
+          </div>
+  
+          <div class="form-group">
+            <label for="inputAdresse">Adresse</label>
+            <input type="adresse"  name="adresse" ngModel required #adresse="ngModel" 
+            class="form-control"
+            id="inputAdresse"
+            placeholder="ex: La marsa">
+          </div>
+  
+          <div class="form-group">
+            <label>je vien ici en tant que...</label>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1" checked>
+              <label class="form-check-label" for="Radios1">
+                Contributeur
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+              <label class="form-check-label" for="Radios2">
+                Promoteur
+              </label>
+            </div>
+  
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Radios" id="Radios3" value="option3">
+              <label class="form-check-label" for="Radios3">
+                Les deux
+              </label>
+            </div>
+          </div>
+  
+  
+  
+            <button type="submit"
+                    class="btn btn-primary">Register</button>
+                    
+        </form>
+    </div>
+  </div> 
